@@ -19,10 +19,12 @@ Edit `server/.env` and add your actual credentials:
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb+srv://your-username:your-password@your-cluster.mongodb.net/expense-tracker
-JWT_SECRET=your-generated-secret-key-here
+MONGODB_URI=<your-actual-mongodb-connection-string>
+JWT_SECRET=<your-generated-secret-key>
 NODE_ENV=development
 ```
+
+⚠️ **Important:** Replace the angle bracket placeholders with your actual values. Do NOT use the examples as-is.
 
 ### Getting Your MongoDB Connection String
 
