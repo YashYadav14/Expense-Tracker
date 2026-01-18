@@ -1,6 +1,10 @@
 name = "expense-tracker"
 pages_build_output_dir = "client/dist"
 
+[build]
+command = "cd client && npm install && npm run build"
+cwd = "./"
+
 [env.production]
 vars = { API_URL = "https://your-backend-url.railway.app/api" }
 
