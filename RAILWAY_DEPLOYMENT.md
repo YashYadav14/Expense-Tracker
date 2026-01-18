@@ -33,13 +33,13 @@ Railway will auto-detect it's a Node.js project.
 ```
 PORT=5000
 NODE_ENV=production
-MONGODB_URI=<your-local-or-atlas-uri>
-JWT_SECRET=<your-generated-secret>
+MONGODB_URI=<your-mongodb-connection-string>
+JWT_SECRET=<your-generated-secret-key>
 ```
 
 **For MongoDB:**
 - Use local: `mongodb://localhost:27017/expense-tracker`
-- Or Atlas: `mongodb+srv://user:pass@cluster.mongodb.net/expense-tracker`
+- Or Atlas: `mongodb+srv://<username>:<password>@cluster.mongodb.net/expense-tracker`
 
 ## Step 4: Configure Root Directory
 
@@ -93,10 +93,10 @@ npm run deploy:prod
 PORT=5000
 
 # MongoDB
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/expense-tracker
+MONGODB_URI=<your-mongodb-connection-string>
 
 # JWT
-JWT_SECRET=<your-secret-here>
+JWT_SECRET=<your-generated-secret-key>
 
 # Environment
 NODE_ENV=production
