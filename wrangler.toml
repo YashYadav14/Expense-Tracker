@@ -1,0 +1,8 @@
+name = "expense-tracker"
+pages_build_output_dir = "client/dist"
+
+[env.production]
+vars = { API_URL = "https://your-backend-url.railway.app/api" }
+
+[env.preview]
+vars = { API_URL = "http://localhost:5000/api" }
