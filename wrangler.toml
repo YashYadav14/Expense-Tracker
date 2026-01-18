@@ -2,7 +2,7 @@ name = "expense-tracker"
 pages_build_output_dir = "client/dist"
 
 [env.production]
-vars = { API_URL = "https://expense-tracker-production-9457.up.railway.app/api" }
+vars = { VITE_API_URL = "https://expense-tracker-production-9457.up.railway.app/api" }
 
 [env.preview]
-vars = { API_URL = "http://localhost:5000/api" }
+vars = { VITE_API_URL = "http://localhost:5000/api" }
